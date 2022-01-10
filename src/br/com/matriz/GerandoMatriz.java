@@ -1,3 +1,4 @@
+package br.com.matriz;
 import java.util.Scanner;
 
 public class GerandoMatriz

@@ -1,4 +1,5 @@
-public class temp
+package br.com.matriz;
+public class Temp
 {
 	public static void main(String args[])
 	{
