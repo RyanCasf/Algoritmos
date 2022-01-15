@@ -7,7 +7,7 @@ public class Bozo
 {
 	private static Random random = new Random();
 	
-	static int[] sort(int array[]) throws Exception 
+	static int[] sort(int[] array) 
 	{
 		while (!sorted(array)) 
 		{
@@ -22,7 +22,7 @@ public class Bozo
 		return array;
 	}
 	
-	static boolean sorted(int array[]) {
+	static boolean sorted(int[] array) {
 		for (int i=1; i<array.length; i++)  {
 			if (array[i-1] > array[i]) {
 				return false;
@@ -35,14 +35,9 @@ public class Bozo
 	{
 		int[] array = {5, 11, 0, 0, 7, 10, 5, 2, 2, 0, 10, 20};
 		
-		try 
-		{
-			array = sort(array);
-			System.out.println("TAM.: "+array.length+" ORDER : "+Arrays.toString(array));
-		}
-		catch (Exception e) 
-		{
-			e.printStackTrace();
-		}
+		try  { array = sort(array); }
+		catch (Exception e)  { e.printStackTrace(); }
+		
+		System.out.println("TAM.: "+array.length+" ORDER : "+Arrays.toString(array));
 	}
 }

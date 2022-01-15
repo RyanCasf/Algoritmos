@@ -2,7 +2,7 @@ package br.com.search.merge;
 
 public class Merge 
 {
-	void sort(int a[], int lo, int hi) throws Exception 
+	void sort(int[] a, int lo, int hi) throws Exception 
 	{
 		if (lo == hi) {
 			return;
@@ -13,9 +13,11 @@ public class Merge
 		sort(a, lo, pivot);
 		sort(a, pivot + 1, hi);
 
-		int working[] = new int[length];
-		for (int i = 0; i < length; i++)
+		int[] working = new int[length];
+		for (int i = 0; i < length; i++) {
 			working[i] = a[lo + i];
+		}
+		
 		int m1 = 0;
 		int m2 = pivot - lo + 1;
 		
@@ -46,7 +48,7 @@ public class Merge
 		}
 	}
 
-	void sort(int a[]) throws Exception {
+	void sort(int[] a) throws Exception {
 		sort(a, 0, a.length - 1);
 	}
 }
