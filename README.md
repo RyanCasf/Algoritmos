@@ -8,7 +8,14 @@
 </ul>
 
 <h3>Ordenação</h3>
-<p>Entrada: Uma sequência de n números 〈a1 , a2 , ..., an 〉. <br>Saída: Uma permutação (reordenação) 〈a1 ’ , a2 ’, ..., an ’〉 da sequência de entrada, tal que a1 ’ ≤ a2 ’ ≤ ... ≤ an ’</p><hr>
+<p>Entrada: Uma sequência de n números 〈a1 , a2 , ..., an 〉. <br>Saída: Uma permutação (reordenação) 〈a1 ’ , a2 ’, ..., an ’〉 da sequência de entrada, tal que a1 ’ ≤ a2 ’ ≤ ... ≤ an ’</p>
+
+<br />
+
+Sort | Descrição | Big O
+:--------- | :------ | :------:
+<b><a href="https://github.com/RyanCasf/Algoritmos/blob/master/src/br/com/search/bozo/Bozo.java">BozoSort</a></b>|Altera a posição de N itens aleatoriamente dentro do array até que atinjam a ordenação X sequência.<br /><i>N = 2 && X = DESC</i>|O(n!)
+<hr>
 
 <h3>UML</h3>
 <p>Unified Modeling Language, conjunto de diagramas que resultam na Modelagem de dados que promove uma visão lógica de todo o processo de forma a facilitar a implementação física do mesmo, formando o processo de  documentação do projeto.<br>
