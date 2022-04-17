@@ -2,53 +2,45 @@ package br.com.search.merge;
 
 public class Merge 
 {
-	void sort(int[] a, int lo, int hi) throws Exception 
-	{
-		if (lo == hi) {
-			return;
+	void sort(int[] vetor) {
+		try {
+			sort(vetor, 0, (vetor.length - 1));
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
+	}
+	
+	void sort(int[] vetor, int inicio, int fim) throws Exception {
+		if (inicio == fim)
+			return;
 
-		int length = hi - lo + 1;
-		int pivot = (lo + hi) / 2;
-		sort(a, lo, pivot);
-		sort(a, pivot + 1, hi);
+		int length = fim - inicio + 1;
+		int pivot = (inicio + fim) / 2;
+		sort(vetor, inicio, pivot);
+		sort(vetor, pivot + 1, fim);
 
 		int[] working = new int[length];
 		for (int i = 0; i < length; i++) {
-			working[i] = a[lo + i];
+			working[i] = vetor[inicio + i];
 		}
-		
-		int m1 = 0;
-		int m2 = pivot - lo + 1;
-		
-		for (int i = 0; i < length; i++) 
-		{
-			if (m2 <= hi - lo) 
-			{
-				if (m1 <= pivot - lo) 
-				{
-					if (working[m1] > working[m2])
-					{
-						a[i + lo] = working[m2++];
-					} 
-					else 
-					{
-						a[i + lo] = working[m1++];
-					}
-				} 
-				else 
-				{
-					a[i + lo] = working[m2++];
-				}
-			}
-			else 
-			{
-				a[i + lo] = working[m1++];
-			}
-		}
-	}
 
-	void sort(int[] a) throws Exception {
-		sort(a, 0, a.length - 1);
+		int m1 = 0;
+		int m2 = pivot - inicio + 1;
+
+		for (int i = 0; i < length; i++) {
+			if (m2 <= fim - inicio) {
+				if (m1 <= pivot - inicio) {
+					if (working[m1] > working[m2]) {
+						vetor[i + inicio] = working[m2++];
+					} else {
+						vetor[i + inicio] = working[m1++];
+					}
+				} else {
+					vetor[i + inicio] = working[m2++];
+				}
+			} else {
+				vetor[i + inicio] = working[m1++];
+			}
+		}
 	}
 }
