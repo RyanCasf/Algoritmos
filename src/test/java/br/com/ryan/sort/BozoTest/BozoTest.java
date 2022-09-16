@@ -7,6 +7,8 @@ import static org.junit.Assert.assertThrows;
 
 import org.junit.Test;
 
+import br.com.ryan.sort.simple.bozo.Bozo;
+
 public class BozoTest {
 	
 	@Test

@@ -1,10 +1,10 @@
-package br.com.ryan.sort.BozoTest;
+package br.com.ryan.sort.simple.bozo;
 
 import java.util.Random;
 
 public class Bozo {
 	
-	static int[] sort(int[] array) throws NullPointerException {
+	public static int[] sort(int[] array) throws NullPointerException {
 		if (array == null) {
 			throw new NullPointerException("Array to sort is null!");
 		}
@@ -23,7 +23,7 @@ public class Bozo {
 		return array;
 	}
 
-	static boolean sorted(int[] array) {
+	private static boolean sorted(int[] array) {
 		for (int i = 1; i < array.length; i++) {
 			if (array[i - 1] > array[i]) {
 				return false;
