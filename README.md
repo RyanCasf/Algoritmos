@@ -14,10 +14,10 @@
 
 Sort | Descrição | Big O
 :--------- | :------ | :------:
-<b><a href="https://github.com/RyanCasf/Algoritmos/blob/master/src/br/com/search/bozo/Bozo.java">Bozo</a></b>|Altera a posição de N itens aleatoriamente dentro do array até que atinjam a ordenação X sequência.<br /><i>N = 2 && X = DESC</i>|Infinite
-<b><a href="https://github.com/RyanCasf/Algoritmos/blob/master/src/br/com/search/bozo/Bozo.java">Bubble</a></b>||O(n^2)
-<b><a href="https://github.com/RyanCasf/Algoritmos/blob/master/src/br/com/search/bozo/Bozo.java">Merge</a></b>|<i>John von Neumann</i>|O(n*log(n))
-<b><a href="https://github.com/RyanCasf/Algoritmos/blob/master/src/br/com/search/bozo/Bozo.java">Quick</a></b>|<i>Tony Hoare</i>|O(n^2)
+<b><a href="https://github.com/RyanCasf/Algoritmos/blob/master/src/main/java/br/com/ryan/sort/simple/bozo/Bozo.java">Bozo</a></b>|Altera a posição de N itens aleatoriamente dentro do array até que atinjam a ordenação X sequência.<br /><i>N = 2 && X = DESC</i>|Infinite
+<b><a href="https://github.com/RyanCasf/Algoritmos">Bubble</a></b>||O(n^2)
+<b><a href="https://github.com/RyanCasf/Algoritmos">Merge</a></b>|<i>John von Neumann</i>|O(n*log(n))
+<b><a href="https://github.com/RyanCasf/Algoritmos">Quick</a></b>|<i>Tony Hoare</i>|O(n^2)
 <hr>
 
 <h3>UML</h3>
