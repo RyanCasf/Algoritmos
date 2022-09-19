@@ -32,3 +32,12 @@ Método | Autor
 BOOCH | Grady Booch
 OMT | James Rumbaugh
 OOSE | Ivar Jacobson 
+
+<hr>
+
+<pre>
+Realizador:
+° RYAN CASTRO FERREIRA.
+</pre>
+<b>LinkdIn </b>- https://www.linkedin.com/in/ryan-castro-ferreira/ <br>
+<b>Email </b>- ryancasf@gmail.com <br> <br>
