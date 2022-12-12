@@ -38,6 +38,12 @@ OOSE | Ivar Jacobson
 <pre>
 Realizador:
 ° RYAN CASTRO FERREIRA.
+<b style="color: blue;">LinkdIn </b>- <a href="https://www.linkedin.com/in/ryan-castro-ferreira">https://www.linkedin.com/in/ryan-castro-ferreira/</a>
+<b style="color: red;">Email </b>- ryancasf@gmail.com
 </pre>
-<b>LinkdIn </b>- https://www.linkedin.com/in/ryan-castro-ferreira/ <br>
-<b>Email </b>- ryancasf@gmail.com <br> <br>
+
+<hr />
+<pre>
+FONTE: Introduction to Algorithms - <b>CLRS</b>
+Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein
+</pre>
