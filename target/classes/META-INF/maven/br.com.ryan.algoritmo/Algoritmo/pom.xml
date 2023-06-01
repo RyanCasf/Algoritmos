@@ -6,4 +6,9 @@
 	<groupId>br.com.ryan.algoritmo</groupId>
 	<artifactId>Algoritmo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	
+	<properties>
+		<maven.compiler.source>16</maven.compiler.source>
+		<maven.compiler.target>16</maven.compiler.target>
+	</properties>
 </project>

@@ -2,7 +2,11 @@ package br.com.ryan.sort.simple.bozo;
 
 import java.util.Random;
 
-public class Bozo {
+public class BozoSort {
+	
+	private BozoSort() {
+	    throw new IllegalStateException("Utility class");
+	}
 	
 	public static int[] sort(int[] array) throws NullPointerException {
 		if (array == null) {
