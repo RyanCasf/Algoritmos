@@ -1,5 +1,5 @@
-<h1><center>Algoritmos</center></h1>
-<center><i>"Antes de existirem computadores, havia algoritmos. Mas, agora que temos computadores, há ainda mais algoritmos, e os algoritmos estão no coração da computação."</i>. </center>
+# Algoritmo
+<i>"Antes de existirem computadores, havia algoritmos. Mas, agora que temos computadores, há ainda mais algoritmos, e os algoritmos estão no coração da computação."</i>.
 
 <p>Conjunto de procedimentos que recebem uma interação de entrada, segui regras do caso para alcançar a saída. Neste sentido, um bom algoritmo é o que corretamente segue esta instrução com nenhuma ou taxa de erro controlada.<br></p>
 <b>KEYS</b>
@@ -14,7 +14,7 @@
 
 Sort | Descrição | Big O
 :--------- | :------ | :------:
-<b><a href="https://github.com/RyanCasf/Algoritmos/blob/master/src/main/java/br/com/ryan/sort/simple/bozo/Bozo.java">Bozo</a></b>|Altera a posição de N itens aleatoriamente dentro do array até que atinjam a ordenação X sequência.<br /><i>N = 2 && X = DESC</i>|Infinite
+<b><a href="https://github.com/RyanCasf/Algoritmos/blob/master/src/main/java/br/com/ryan/sort/simple/bozo/BozoSort.java">Bozo</a></b>|Altera a posição de N itens aleatoriamente dentro do array até que atinjam a ordenação X sequência.<br /><i>N = 2 && X = DESC</i>|Infinite
 <b><a href="https://github.com/RyanCasf/Algoritmos">Bubble</a></b>||O(n^2)
 <b><a href="https://github.com/RyanCasf/Algoritmos">Merge</a></b>|<i>John von Neumann</i>|O(n*log(n))
 <b><a href="https://github.com/RyanCasf/Algoritmos">Quick</a></b>|<i>Tony Hoare</i>|O(n^2)
@@ -34,6 +34,9 @@ OMT | James Rumbaugh
 OOSE | Ivar Jacobson 
 
 <hr>
+
+## Mais detalhes
+Para ver mais acesse o [sumário](DIRECTORY.md).
 
 <pre>
 Realizador:
