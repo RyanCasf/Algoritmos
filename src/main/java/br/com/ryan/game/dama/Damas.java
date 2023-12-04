@@ -4,8 +4,10 @@ import java.util.Scanner;
 
 public class Damas {
 	
-	private static String POSICAO_BRANCA = "[]", POSICAO_PRETA = "█";
-	private static String PECA_BRANCA = "M", PECA_PRETA = "@";
+	private static final String POSICAO_BRANCA = "[]";
+	private static final String POSICAO_PRETA = "█";
+	private static final String PECA_BRANCA = "M";
+	private static final String PECA_PRETA = "@";
 	private static boolean isVezPreta = true;
 	
 	private static String[][] tabuleiro = {
@@ -20,7 +22,6 @@ public class Damas {
 	};
 	
 	public static void main(String... args) {
-		final int TAMANHO = tabuleiro.length;
 		imprimirTabuleiro();
 		
 		do {
@@ -33,7 +34,7 @@ public class Damas {
 			catch (Exception e) {
 				System.err.println("Opção inválida!");
 			}
-		} while (continuar(TAMANHO));
+		} while (continuar());
 	}
 	
 	private static void imprimirTabuleiro() {
@@ -93,6 +94,7 @@ public class Damas {
 		
 		verificarMoverPeca(linhaPecaInicio, colunaPecaInicio, colunaPecaFinal);
 		
+		scanner.close();
 		isVezPreta = false;
 		imprimirTabuleiro();
 	}
@@ -111,16 +113,10 @@ public class Damas {
 		}
 		
 		String valorPosicao = tabuleiro[linhaPecaInicio][colunaPecaInicio];
-		
-		if (valorPosicao.equals(PECA_BRANCA)) {
-			int linhaPecaFinal = linhaPecaInicio + 1;
-		}
-		else if (valorPosicao.equals(PECA_PRETA)) {
-			int linhaPecaFinal = linhaPecaInicio - 1;
-		}
 	}
 	
-	private static boolean continuar(final int TAMANHO) {
+	private static boolean continuar() {
+		final int TAMANHO = tabuleiro.length;
 		boolean existePecaBraca = existePeca(TAMANHO, PECA_BRANCA);
 		boolean existePecaPreta = existePeca(TAMANHO, PECA_PRETA);
 		
